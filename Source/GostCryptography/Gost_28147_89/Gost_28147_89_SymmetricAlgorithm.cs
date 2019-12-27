@@ -61,8 +61,8 @@ namespace GostCryptography.Gost_28147_89
 		[SecurityCritical]
 		private void InitDefaults()
 		{
-			Mode = CipherMode.CFB;
-			Padding = PaddingMode.None;
+			Mode = CipherMode.ECB;
+			Padding = PaddingMode.PKCS7;
 		}
 
 

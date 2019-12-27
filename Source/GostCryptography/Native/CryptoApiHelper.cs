@@ -136,8 +136,7 @@ namespace GostCryptography.Native
 				{
 					if (!_randomNumberGenerators.ContainsKey(providerType))
 					{
-						var providerParams = new CspParameters(providerType.ToInt());
-						var randomNumberGenerator = new RNGCryptoServiceProvider(providerParams);
+					    var randomNumberGenerator = new RNGCryptoServiceProvider();
 
 						Thread.MemoryBarrier();
 
